@@ -1,0 +1,32 @@
+{{ $testimonials := $.Site.Data.testimonials.testimonial }}
+
+<style type="text/css">
+.testimonial-content {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 737px) {
+  .gallery .from-left {
+    padding-right: 1em;
+  }
+
+  .gallery .from-right {
+    padding-left: 1em;
+  }
+}
+</style>
+
+<div class="gallery">
+  {{ range first 2 $testimonials }}
+    <article class="{{ .effect }}">
+      <p class="image fit"><img src="{{ .image | absURL }}" title="{{ .title }}" alt="{{ .title }}" /></p>
+
+      <div class="testimonial-content">
+        {{ .content | markdownify }}
+      </div>
+    </article>
+  {{ end }}
+</div>

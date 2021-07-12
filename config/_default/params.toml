@@ -1,0 +1,12 @@
+footerCredits = 'Built by: <a href="https://greenash.net.au/">GreenAsh</a>'
+
+[header]
+  title = "Private Spanish Lessons in Mendoza"
+
+[[social]]
+  medium = "Facebook"
+  icon = "fa-facebook"
+  link = "http://www.facebook.com/pages/S-I-M-A-SPANISH-IN-MENDOZA-ARGENTINA/201632089910475"
+
+[contact]
+  sendBtnText = "Send Message"
