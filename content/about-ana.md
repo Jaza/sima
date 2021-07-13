@@ -1,8 +1,10 @@
 ---
-title: "About Ana"
-heroContent: "Hi! I am a certified teacher of Spanish as a second language. I have a lot of experience teaching Spanish to English speakers. I live in Mendoza, Argentina."
-heroImage: ""
-heroPosition: "50% 25%"
+title: About Ana
+heroContent: Hi! I am a certified teacher of Spanish as a second language. I have
+  a lot of experience teaching Spanish to English speakers. I live in Mendoza, Argentina.
+heroImage: parras-en-salentain.jpg
+heroPosition: 50% 25%
+
 ---
 I am a graduate of the National University of San Juan in Language Education, and have taught for 20 years as a language instructor. As well as my experience, I have had numerous further training, including:
 
