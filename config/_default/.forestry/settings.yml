@@ -10,10 +10,10 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: data
+  path: content/testimonials
   label: Testimonials
   create: all
-  match: testimonials.toml
+  match: "*"
 - type: directory
   path: content
   label: Pages
