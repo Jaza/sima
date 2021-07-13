@@ -14,3 +14,5 @@ _build:
 
 ---
 Mendoza is located in the heart of Argentina's wine district. It's a great place to study Spanish, especially if you have an urge to travel and learn at the same time.
+
+[More about Mendoza](/mendoza/)
