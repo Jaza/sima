@@ -1,4 +1,4 @@
-{{ $testimonials := $.Site.Data.testimonials.testimonial }}
+{{ $testimonials := (where $.Site.RegularPages "Section" "testimonials") }}
 
 <style type="text/css">
 .testimonial-content {
@@ -17,18 +17,31 @@
     padding-left: 1em;
   }
 }
+
+.gallery h3 {
+  width: 100%;
+  margin-top: 2em;
+}
 </style>
 
 <div class="gallery">
-  {{ range first 2 $testimonials }}
-    <article class="{{ .effect }}">
-      {{ if .image }}
-      <p class="image fit"><img src="{{ $.Site.Params.mediaBaseURL }}{{ .image }}" title="{{ .title }}" alt="{{ .title }}" /></p>
+  {{ $rangeSize := 10000 }}
+  {{ if eq (relURL .URL) ("/" | safeHTML) }}
+  {{ $rangeSize = 2 }}
+  {{ end }}
+  {{ range $i, $v := first $rangeSize $testimonials }}
+    <article class="from-{{ if (modBool $i 2) }}left{{ else }}right{{ end }}">
+      {{ if $v.Params.image }}
+      <p class="image fit"><img src="{{ $.Site.Params.mediaBaseURL }}{{ $v.Params.image }}" title="{{ $v.Title }}" alt="{{ $v.Title }}" /></p>
       {{ end }}
 
       <div class="testimonial-content">
-        {{ .content | markdownify }}
+        {{ $v.Content }}
       </div>
     </article>
   {{ end }}
 </div>
+
+{{ if eq (relURL .URL) ("/" | safeHTML) }}
+<h3><a href="/testimonials/">More student testimonials</a></h3>
+{{ end }}

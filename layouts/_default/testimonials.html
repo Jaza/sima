@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+{{ "<!--" | safeHTML }}
+  Big Picture by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+{{ "-->" | safeHTML }}
+<html>
+  <head>
+    {{ partial "head" . }}
+  </head>
+<body>
+
+  <!-- Header -->
+  {{ partial "header" . }}
+
+  <!-- Hero -->
+  {{- if .Params.heroImage }}
+  <style type="text/css">
+    #hero {
+      background: url("{{ .Site.BaseURL }}assets/css/images/overlay.png"), url("{{ .Site.Params.mediaBaseURL }}{{ .Params.heroImage }}");
+      background-size: 256px 256px, cover;
+      background-attachment: fixed, fixed;
+      background-position: top left, {{ if .Params.heroPosition }}{{ .Params.heroPosition }}{{ else }}center center{{ end }};
+      background-repeat: repeat, no-repeat;
+    }
+  </style>
+  {{ end -}}
+
+  <section id="hero" class="main style1 dark fullscreen">
+    <div class="content">
+      {{ if .Params.heroContent }}
+      <header>
+        <p>{{ .Params.heroContent | markdownify }}</p>
+      </header>
+      {{ end }}
+
+      <!-- More button for intro section -->
+      <footer>
+        <a href="#main-content" class="button style2 down">More</a>
+      </footer>
+    </div>
+  </section>
+
+  <style type="text/css">
+    .main-content-article {
+      text-align: left;
+    }
+
+    .main-content-article h2, .main-content-article h3 {
+      text-align: center;
+      margin: 2em 0;
+    }
+
+    .main-content-article ol, .main-content-article ul {
+      margin-left: 1.5em;
+    }
+
+    .main-content-article ol {
+      list-style: decimal;
+    }
+
+    .main-content-article ul {
+      list-style: disc;
+    }
+  </style>
+
+  <!-- Main Content -->
+  <section id="main-content" class="main style3 primary">
+    <div class="content">
+      <header>
+        <h2>{{ .Title }}</h2>
+      </header>
+
+      <article class="main-content-article">
+      {{ partial "testimonials" . }}
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  {{ partial "footer" . }}
+
+  <!-- Scripts -->
+  {{ partial "scripts" . }}
+
+</body>
+</html>

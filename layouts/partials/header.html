@@ -9,7 +9,9 @@
   <nav>
     <ul>
       {{ range (where .Site.RegularPages "Section" "") }}
+      {{ if not (eq .Title "Testimonials") }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
       {{ end }}
     </ul>
   </nav>
