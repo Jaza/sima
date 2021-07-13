@@ -22,7 +22,9 @@
 <div class="gallery">
   {{ range first 2 $testimonials }}
     <article class="{{ .effect }}">
-      <p class="image fit"><img src="{{ .image | absURL }}" title="{{ .title }}" alt="{{ .title }}" /></p>
+      {{ if .image }}
+      <p class="image fit"><img src="{{ .Site.Params.mediaBaseURL }}{{ .image }}" title="{{ .title }}" alt="{{ .title }}" /></p>
+      {{ end }}
 
       <div class="testimonial-content">
         {{ .content | markdownify }}

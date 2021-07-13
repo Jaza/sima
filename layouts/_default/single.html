@@ -17,7 +17,7 @@
   {{- if .Params.heroImage }}
   <style type="text/css">
     #hero {
-      background: url("{{ .Site.BaseURL }}assets/css/images/overlay.png"), url("{{ .Params.heroImage | absURL }}");
+      background: url("{{ .Site.BaseURL }}assets/css/images/overlay.png"), url("{{ .Site.Params.mediaBaseURL }}{{ .Params.heroImage }}");
       background-size: 256px 256px, cover;
       background-attachment: fixed, fixed;
       background-position: top left, {{ if .Params.heroPosition }}{{ .Params.heroPosition }}{{ else }}center center{{ end }};

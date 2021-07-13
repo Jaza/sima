@@ -1,4 +1,5 @@
 footerCredits = 'Built by: <a href="https://greenash.net.au/">GreenAsh</a>'
+mediaBaseURL = "//spanishinmendozaargentinauploads.greenash.net.au/"
 
 [header]
   title = "Private Spanish Lessons in Mendoza"
