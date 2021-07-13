@@ -23,7 +23,7 @@
   {{ range first 2 $testimonials }}
     <article class="{{ .effect }}">
       {{ if .image }}
-      <p class="image fit"><img src="{{ .Site.Params.mediaBaseURL }}{{ .image }}" title="{{ .title }}" alt="{{ .title }}" /></p>
+      <p class="image fit"><img src="{{ $.Site.Params.mediaBaseURL }}{{ .image }}" title="{{ .title }}" alt="{{ .title }}" /></p>
       {{ end }}
 
       <div class="testimonial-content">
