@@ -16,3 +16,7 @@ _build:
 Paraná 628\
 Ciudad, Mendoza\
 Argentina
+
+[simaspanish@gmail.com](mailto:simaspanish@gmail.com)
+
+[Directions for new students](/contact/)
