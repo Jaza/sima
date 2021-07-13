@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
 upload_dir: ''
-public_path: "//spanishinmendozaargentinauploads.greenash.net.au"
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
