@@ -5,10 +5,15 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: ''
+  label: Home
+  create: all
+  match: content/panel/*
+- type: directory
   path: data
   label: Testimonials
   create: all
-  match: "**/*"
+  match: testimonials.toml
 - type: directory
   path: content
   label: Pages
