@@ -40,7 +40,7 @@
   {{ range $i, $v := first $rangeSize $testimonials }}
     <article class="from-{{ if (modBool $i 2) }}left{{ else }}right{{ end }}">
       {{ if $v.Params.image }}
-      <p class="image fit"><img src="{{ $.Site.Params.mediaBaseURL }}{{ $v.Params.image }}" title="{{ $v.Title }}" alt="{{ $v.Title }}" /></p>
+      <p class="image fit"><img src="{{ $.Site.Params.mediaBaseURL }}{{ $v.Params.image }}" title="{{ $v.Title }}" alt="{{ $v.Title }}" loading="lazy" /></p>
       {{ end }}
 
       <div class="testimonial-content">
