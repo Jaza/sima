@@ -1,0 +1,19 @@
+<div class="box">
+  <form method="post" action="/success" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="subject" value="[SIMA] New Message" />
+
+    <div class="field half first">
+      <input type="text" name="name" placeholder="Name" />
+    </div>
+    <div class="field half">
+      <input type="email" name="email" placeholder="Email" />
+    </div>
+    <div class="field">
+      <textarea name="message" placeholder="Message" rows="6"></textarea>
+    </div>
+    <ul class="actions">
+      <li><input type="submit" value="{{ .Site.Params.contact.sendBtnText }}" /></li>
+    </ul>
+  </form>
+</div>
