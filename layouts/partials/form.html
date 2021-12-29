@@ -1,5 +1,5 @@
 <div class="box">
-  <form name="contact" method="POST" action="/success/" data-netlify="true">
+  <form name="contact" method="POST" action="/success/" data-netlify netlify-honeypot="vermiciousknid" data-netlify-recaptcha>
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="subject" value="[SIMA] New Message" />
 
@@ -9,9 +9,13 @@
     <div class="field half">
       <input type="email" name="email" placeholder="Email" />
     </div>
+    <div style="display: none">
+      <input type="text" name="vermiciousknid">
+    </div>
     <div class="field">
       <textarea name="message" placeholder="Message" rows="6"></textarea>
     </div>
+    <div data-netlify-recaptcha></div>
     <ul class="actions">
       <li><input type="submit" value="{{ .Site.Params.contact.sendBtnText }}" /></li>
     </ul>
