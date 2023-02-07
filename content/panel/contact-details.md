@@ -17,8 +17,6 @@ Paraná 628
 Ciudad, Mendoza  
 Argentina
 
-Test
-
 [simaspanish@gmail.com](mailto:simaspanish@gmail.com)
 
 [Directions for new students](/contact/)
