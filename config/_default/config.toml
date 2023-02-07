@@ -1,6 +1,6 @@
 languageCode = "en"
 title = "SIMA"
-copyright = "&copy; 2009-2021 Ana Maria Troncoso"
+copyright = "&copy; 2009-2023 Ana Maria Troncoso"
 theme = "big-picture"
 disableKinds = ["RSS", "taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
