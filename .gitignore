@@ -12,3 +12,6 @@ hugo.linux
 *.py[cod]
 __pycache__/
 venv/
+
+node_modules
+.env
