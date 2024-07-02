@@ -13,4 +13,4 @@ _build:
   list: always
 
 ---
-[Private lessons](/spanish-lessons/) in Spanish, for foreigners who speak English or other languages. Help with conversation, reading, grammar, pronounciation, local expressions, and other skills. Lessons [tailored](/fees/) to your individual needs.
+[Spanish lessons](/spanish-lessons/) for foreigners who speak English or other languages. Help with conversation, reading, grammar, pronounciation, local expressions, and other skills. [Fees](/fees/) tailored to your individual needs.
